@@ -1,0 +1,54 @@
+{
+  "name": "<%= packageName %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "main": "dist/<%= packageName %>.js",
+  "scripts": {
+    "test": "nyc ./node_modules/.bin/mocha --timeout 10000 --compilers js:@babel/register 'tests/**/*test.js' --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<%= repositoryUrl %>"
+  },
+  "keywords": [
+    "<%= keywords %>"
+  ],
+  "author": "<%= author %>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "<%= homepage %>",
+  "dependencies": {
+    "moment": "^2.22.2",
+    "lodash": "^4.17.10"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/runtime": "^7.3.1",
+    "babel-eslint": "10.0.1",
+    "dotenv": "6.1.0",
+    "eslint": "4.x.x",
+    "debug": "^4.1.1",
+    "chai": "4.x.x",
+    "chai-as-promised": "7.x.x",
+    "mocha": "4.x.x",
+    "sinon": "7.1.1",
+    "nyc": "13.1.0",
+    "webpack": "4.x.x",
+    "webpack-cli": "3.x.x",
+    "webpack-node-externals": "1.7.2",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-jsx": "^6.0.2",
+    "eslint-plugin-standard": "^4.0.0",
+    "standard": "^12.0.1"
+  }
+}

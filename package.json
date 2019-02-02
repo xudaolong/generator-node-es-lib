@@ -1,0 +1,29 @@
+{
+  "name": "generator-node-es-lib",
+  "version": "1.0.0",
+  "description": "Use the latest technology to write the NPM library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xudaolong/generator-node-es-lib.git"
+  },
+  "keywords": [
+    "es6",
+    "es7",
+    "babel",
+    "javascript",
+    "yeoman-generator"
+  ],
+  "author": "dillon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xudaolong/generator-node-es-lib/issues"
+  },
+  "homepage": "https://github.com/xudaolong/generator-node-es-lib#readme",
+  "dependencies": {
+    "yeoman-generator": "3.2.0"
+  }
+}

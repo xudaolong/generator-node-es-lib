@@ -1,0 +1,13 @@
+version: "3.4"
+services:
+  <%= packageName %>:
+    container_name: <%= packageName %>
+    build:
+      context: ../
+      dockerfile: ./docker-compose/Dockerfile
+    volumes:
+      - ../:/<%= packageName %>
+    command: |
+      sh -c 'chmod u+x ./docker-compose/bin/wait-for && \
+        # ./docker-compose/bin/wait-for redis:6379 -- \
+        npm test && exit 0;'
