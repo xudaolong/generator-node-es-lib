@@ -25,5 +25,8 @@
   "homepage": "https://github.com/xudaolong/generator-node-es-lib#readme",
   "dependencies": {
     "yeoman-generator": "3.2.0"
+  },
+  "devDependencies": {
+    "release-it": "^10.0.7"
   }
 }
