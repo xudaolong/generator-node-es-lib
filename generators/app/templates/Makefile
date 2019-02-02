@@ -18,4 +18,7 @@ node:
 test:
 	docker-compose -f ./docker-compose/test.yml up --abort-on-container-exit
 
+release:
+	${NODE_MODULE_BIN}release-it $(filter-out $@,$(MAKECMDGOALS))
+
 .PHONY: test dist release
